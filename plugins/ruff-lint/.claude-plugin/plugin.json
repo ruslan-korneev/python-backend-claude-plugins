@@ -1,6 +1,6 @@
 {
   "name": "ruff-lint",
-  "version": "1.0.1",
+  "version": "1.0.0-rc.2",
   "description": "Seamless ruff integration into Claude Code workflow. ZERO noqa policy — always the proper solution instead of ignoring.",
   "author": {
     "name": "Ruslan Korneev"

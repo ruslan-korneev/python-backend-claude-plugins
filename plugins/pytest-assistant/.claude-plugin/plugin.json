@@ -1,6 +1,6 @@
 {
   "name": "pytest-assistant",
-  "version": "1.0.1",
+  "version": "1.0.0-rc.2",
   "description": "TDD-first testing with pytest. Test first, then implementation.",
   "author": {
     "name": "Ruslan Korneev"

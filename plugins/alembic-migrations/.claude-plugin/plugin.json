@@ -1,6 +1,6 @@
 {
   "name": "alembic-migrations",
-  "version": "1.0.1",
+  "version": "1.0.0-rc.2",
   "description": "Alembic migrations with automatic handling of Enum and other problematic types.",
   "author": {
     "name": "Ruslan Korneev"

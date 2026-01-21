@@ -1,6 +1,6 @@
 {
   "name": "python-typing",
-  "version": "1.0.1",
+  "version": "1.0.0-rc.2",
   "description": "Python type annotations without type: ignore. Always the correct solution.",
   "author": {
     "name": "Ruslan Korneev"

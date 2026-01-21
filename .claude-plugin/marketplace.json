@@ -10,7 +10,7 @@
     {
       "name": "ruff-lint",
       "description": "Seamless ruff integration into Claude Code workflow. ZERO noqa policy — always the proper solution instead of ignoring.",
-      "version": "1.0.0",
+      "version": "1.0.0-rc.2",
       "author": {
         "name": "Ruslan Korneev"
       },
@@ -21,7 +21,7 @@
     {
       "name": "pytest-assistant",
       "description": "TDD-first testing with pytest. Test first, then implementation.",
-      "version": "1.0.0",
+      "version": "1.0.0-rc.2",
       "author": {
         "name": "Ruslan Korneev"
       },
@@ -32,7 +32,7 @@
     {
       "name": "fastapi-scaffold",
       "description": "Boilerplate code generation for FastAPI with best practices: Repository pattern, DI, DTOs.",
-      "version": "1.0.0",
+      "version": "1.0.0-rc.2",
       "author": {
         "name": "Ruslan Korneev"
       },
@@ -43,7 +43,7 @@
     {
       "name": "python-typing",
       "description": "Python type annotations without type: ignore. Always the correct solution.",
-      "version": "1.0.0",
+      "version": "1.0.0-rc.2",
       "author": {
         "name": "Ruslan Korneev"
       },
@@ -54,7 +54,7 @@
     {
       "name": "docker-backend",
       "description": "Docker for backend development. docker run first, docker-compose only on request.",
-      "version": "1.0.0",
+      "version": "1.0.0-rc.2",
       "author": {
         "name": "Ruslan Korneev"
       },
@@ -65,7 +65,7 @@
     {
       "name": "alembic-migrations",
       "description": "Alembic migrations with automatic handling of Enum and other problematic types.",
-      "version": "1.0.0",
+      "version": "1.0.0-rc.2",
       "author": {
         "name": "Ruslan Korneev"
       },
@@ -76,7 +76,7 @@
     {
       "name": "clean-code",
       "description": "Clean Code principles: SOLID, code smells, refactoring patterns.",
-      "version": "1.0.0",
+      "version": "1.0.0-rc.2",
       "author": {
         "name": "Ruslan Korneev"
       },

@@ -1,6 +1,6 @@
 {
   "name": "clean-code",
-  "version": "1.0.1",
+  "version": "1.0.0-rc.2",
   "description": "Clean Code principles: SOLID, code smells, refactoring patterns",
   "author": {
     "name": "Ruslan Korneev"
