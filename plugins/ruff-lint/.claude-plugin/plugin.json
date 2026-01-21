@@ -1,0 +1,11 @@
+{
+  "name": "ruff-lint",
+  "version": "1.0.0",
+  "description": "Seamless ruff integration into Claude Code workflow. ZERO noqa policy — always the proper solution instead of ignoring.",
+  "author": "Ruslan Korneev",
+  "commands_path": "../commands",
+  "skills_path": "../skills",
+  "hooks_path": "../hooks/hooks.json",
+  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "keywords": ["python", "linting", "ruff", "code-quality"]
+}

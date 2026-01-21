@@ -1,0 +1,210 @@
+# Пример pyproject.toml для FastAPI проекта
+# Копируй секции [tool.ruff.*] в свой проект
+
+[project]
+name = "fastapi-example"
+version = "0.1.0"
+description = "Example FastAPI project with optimal ruff configuration"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "sqlalchemy>=2.0.36",
+    "alembic>=1.14.0",
+    "asyncpg>=0.30.0",
+    "dependency-injector>=4.42.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "pytest-cov>=6.0.0",
+    "httpx>=0.28.0",
+]
+
+# =============================================================================
+# RUFF CONFIGURATION
+# =============================================================================
+
+[tool.ruff]
+# Целевая версия Python
+target-version = "py312"
+
+# Длина строки — 120 для лучшей читаемости на современных мониторах
+line-length = 120
+
+# Директории с исходным кодом
+src = ["src"]
+
+# Исключаемые директории
+exclude = [
+    ".git",
+    ".venv",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    "__pycache__",
+    "alembic/versions",
+]
+
+[tool.ruff.lint]
+# Включаем ВСЕ правила
+select = ["ALL"]
+
+# Отключаем правила, которые не подходят для FastAPI проектов
+ignore = [
+    # Docstrings — код должен быть самодокументируемым
+    "D",
+
+    # Аннотации для self/cls — избыточно
+    "ANN101",
+    "ANN102",
+
+    # Boolean positional argument — часто нужно в FastAPI
+    "FBT003",
+
+    # Too many arguments — для DI это нормально
+    "PLR0913",
+
+    # Assert — разрешаем в тестах через per-file-ignores
+    "S101",
+
+    # Конфликт с formatter
+    "COM812",
+    "ISC001",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Тесты
+"tests/**/*.py" = [
+    "S101",    # assert разрешён
+    "PLR2004", # magic values в тестах нормально
+    "ARG001",  # unused arguments в fixtures
+]
+
+# Conftest
+"conftest.py" = [
+    "ARG001",  # unused arguments в fixtures
+]
+
+# Миграции Alembic — автогенерируемый код
+"alembic/versions/*.py" = ["ALL"]
+
+# __init__.py — re-export модулей
+"__init__.py" = ["F401"]
+
+# Роутеры FastAPI — Depends() в default arguments by design
+"src/*/routers.py" = ["B008"]
+"src/**/api/**/*.py" = ["B008"]
+
+[tool.ruff.lint.isort]
+# Свои пакеты
+known-first-party = ["src"]
+
+# Не разделять импорты на отдельные строки
+force-single-line = false
+
+# Две пустые строки после импортов
+lines-after-imports = 2
+
+# Порядок секций
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+]
+
+[tool.ruff.lint.flake8-type-checking]
+# Классы, которые нужны в runtime
+runtime-evaluated-base-classes = [
+    "pydantic.BaseModel",
+    "sqlalchemy.orm.DeclarativeBase",
+]
+
+[tool.ruff.lint.pylint]
+# Лимиты сложности (настрой под свой проект)
+max-args = 10        # Для DI может быть больше
+max-branches = 12
+max-returns = 6
+max-statements = 50
+
+[tool.ruff.format]
+# Двойные кавычки
+quote-style = "double"
+
+# Пробелы для отступов
+indent-style = "space"
+
+# Сохранять trailing comma
+skip-magic-trailing-comma = false
+
+# Автоопределение line ending
+line-ending = "auto"
+
+# Форматирование docstrings
+docstring-code-format = true
+
+# =============================================================================
+# MYPY CONFIGURATION (дополняет ruff)
+# =============================================================================
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+
+# Плагины
+plugins = ["pydantic.mypy"]
+
+# Игнорируем библиотеки без типов
+[[tool.mypy.overrides]]
+module = [
+    "dependency_injector.*",
+]
+ignore_missing_imports = true
+
+# =============================================================================
+# PYTEST CONFIGURATION
+# =============================================================================
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+addopts = [
+    "-v",
+    "--tb=short",
+    "--strict-markers",
+]
+markers = [
+    "integration: marks tests as integration tests",
+    "slow: marks tests as slow",
+]
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+omit = [
+    "*/tests/*",
+    "*/__init__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]

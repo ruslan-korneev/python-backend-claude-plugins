@@ -1,0 +1,10 @@
+{
+  "name": "docker-backend",
+  "version": "1.0.0",
+  "description": "Docker for backend development. docker run first, docker-compose only on request.",
+  "author": "Ruslan Korneev",
+  "commands_path": "../commands",
+  "skills_path": "../skills",
+  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "keywords": ["python", "docker", "containers", "devops"]
+}

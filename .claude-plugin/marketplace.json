@@ -1,0 +1,88 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "python-backend-plugins",
+  "description": "Collection of Claude Code plugins for Python backend development with FastAPI, SQLAlchemy 2.0, and modern tooling",
+  "owner": {
+    "name": "Ruslan Korneev",
+    "email": "shaggybackend@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "ruff-lint",
+      "description": "Seamless ruff integration into Claude Code workflow. ZERO noqa policy — always the proper solution instead of ignoring.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/ruff-lint",
+      "category": "development",
+      "tags": ["python", "linting", "ruff", "code-quality"]
+    },
+    {
+      "name": "pytest-assistant",
+      "description": "TDD-first testing with pytest. Test first, then implementation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/pytest-assistant",
+      "category": "testing",
+      "tags": ["python", "testing", "pytest", "tdd"]
+    },
+    {
+      "name": "fastapi-scaffold",
+      "description": "Boilerplate code generation for FastAPI with best practices: Repository pattern, DI, DTOs.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/fastapi-scaffold",
+      "category": "development",
+      "tags": ["python", "fastapi", "boilerplate", "scaffolding"]
+    },
+    {
+      "name": "python-typing",
+      "description": "Python type annotations without type: ignore. Always the correct solution.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/python-typing",
+      "category": "development",
+      "tags": ["python", "typing", "mypy", "type-checking"]
+    },
+    {
+      "name": "docker-backend",
+      "description": "Docker for backend development. docker run first, docker-compose only on request.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/docker-backend",
+      "category": "deployment",
+      "tags": ["python", "docker", "containers", "devops"]
+    },
+    {
+      "name": "alembic-migrations",
+      "description": "Alembic migrations with automatic handling of Enum and other problematic types.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/alembic-migrations",
+      "category": "database",
+      "tags": ["python", "alembic", "migrations", "sqlalchemy", "database"]
+    },
+    {
+      "name": "clean-code",
+      "description": "Clean Code principles: SOLID, code smells, refactoring patterns.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/clean-code",
+      "category": "development",
+      "tags": ["python", "clean-code", "solid", "refactoring"]
+    }
+  ]
+}

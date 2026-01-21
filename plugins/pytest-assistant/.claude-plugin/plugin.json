@@ -1,0 +1,11 @@
+{
+  "name": "pytest-assistant",
+  "version": "1.0.0",
+  "description": "TDD-first testing with pytest. Test first, then implementation.",
+  "author": "Ruslan Korneev",
+  "commands_path": "../commands",
+  "skills_path": "../skills",
+  "agents_path": "../agents",
+  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "keywords": ["python", "testing", "pytest", "tdd"]
+}

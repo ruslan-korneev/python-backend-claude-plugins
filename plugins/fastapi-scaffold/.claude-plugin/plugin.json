@@ -1,0 +1,10 @@
+{
+  "name": "fastapi-scaffold",
+  "version": "1.0.0",
+  "description": "Boilerplate code generation for FastAPI with best practices: Repository pattern, DI, DTOs.",
+  "author": "Ruslan Korneev",
+  "commands_path": "../commands",
+  "skills_path": "../skills",
+  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "keywords": ["python", "fastapi", "boilerplate", "scaffolding"]
+}
