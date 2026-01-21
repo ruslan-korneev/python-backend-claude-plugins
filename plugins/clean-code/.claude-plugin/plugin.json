@@ -2,9 +2,9 @@
   "name": "clean-code",
   "version": "1.0.0",
   "description": "Clean Code principles: SOLID, code smells, refactoring patterns",
-  "author": "Ruslan Korneev",
-  "commands_path": "../commands",
-  "skills_path": "../skills",
+  "author": {
+    "name": "Ruslan Korneev"
+  },
   "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
   "keywords": ["python", "clean-code", "solid", "refactoring"]
 }

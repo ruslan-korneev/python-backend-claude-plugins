@@ -2,10 +2,9 @@
   "name": "python-typing",
   "version": "1.0.0",
   "description": "Python type annotations without type: ignore. Always the correct solution.",
-  "author": "Ruslan Korneev",
-  "commands_path": "../commands",
-  "skills_path": "../skills",
-  "hooks_path": "../hooks/hooks.json",
+  "author": {
+    "name": "Ruslan Korneev"
+  },
   "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
   "keywords": ["python", "typing", "mypy", "type-checking"]
 }

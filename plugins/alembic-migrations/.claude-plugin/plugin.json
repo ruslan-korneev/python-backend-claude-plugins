@@ -2,10 +2,9 @@
   "name": "alembic-migrations",
   "version": "1.0.0",
   "description": "Alembic migrations with automatic handling of Enum and other problematic types.",
-  "author": "Ruslan Korneev",
-  "commands_path": "../commands",
-  "skills_path": "../skills",
-  "agents_path": "../agents",
+  "author": {
+    "name": "Ruslan Korneev"
+  },
   "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
   "keywords": ["python", "alembic", "migrations", "sqlalchemy", "database"]
 }
