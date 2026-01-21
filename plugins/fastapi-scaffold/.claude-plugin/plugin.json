@@ -1,6 +1,6 @@
 {
   "name": "fastapi-scaffold",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Boilerplate code generation for FastAPI with best practices: Repository pattern, DI, DTOs.",
   "author": {
     "name": "Ruslan Korneev"
