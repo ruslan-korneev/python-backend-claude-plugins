@@ -11,7 +11,7 @@
 If you discover a security vulnerability in any of the plugins, please report it by:
 
 1. **Do not** open a public issue
-2. Send an email to the maintainers with:
+2. Send an email to **shaggybackend@gmail.com** with:
    - Description of the vulnerability
    - Steps to reproduce
    - Potential impact
