@@ -1,5 +1,5 @@
 ---
-name: fixture
+name: pytest:fixture
 description: Create a pytest fixture
 allowed_tools:
   - Bash

@@ -1,5 +1,5 @@
 ---
-name: endpoint
+name: fastapi:endpoint
 description: Create a new endpoint with service and test
 allowed_tools:
   - Bash

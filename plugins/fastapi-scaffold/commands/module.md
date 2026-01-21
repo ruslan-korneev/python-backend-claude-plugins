@@ -1,5 +1,5 @@
 ---
-name: module
+name: fastapi:module
 description: Create a complete FastAPI module (routers, services, repositories, dto, models + tests)
 allowed_tools:
   - Bash

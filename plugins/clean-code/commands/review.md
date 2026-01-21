@@ -1,5 +1,5 @@
 ---
-name: review
+name: clean-code:review
 description: Analyze code for code smells and principle violations
 allowed_tools:
   - Read

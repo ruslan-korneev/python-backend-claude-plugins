@@ -1,5 +1,5 @@
 ---
-name: explain
+name: pytyping:explain
 description: Explain type error and show the correct solution (without type: ignore)
 allowed_tools:
   - Bash

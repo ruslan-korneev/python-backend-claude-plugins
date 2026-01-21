@@ -1,5 +1,5 @@
 ---
-name: file
+name: docker:file
 description: Create an optimal Dockerfile (multi-stage, uv)
 allowed_tools:
   - Bash

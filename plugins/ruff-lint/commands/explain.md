@@ -1,5 +1,5 @@
 ---
-name: explain
+name: ruff:explain
 description: Explain a ruff error and show the PROPER solution (without noqa!)
 allowed_tools:
   - Bash

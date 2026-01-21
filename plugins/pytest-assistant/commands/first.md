@@ -1,5 +1,5 @@
 ---
-name: first
+name: pytest:first
 description: Create a test BEFORE implementation (TDD red phase)
 allowed_tools:
   - Bash

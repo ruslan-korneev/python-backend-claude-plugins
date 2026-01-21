@@ -1,5 +1,5 @@
 ---
-name: config
+name: ruff:config
 description: Configure ruff for the project with FastAPI recommendations
 allowed_tools:
   - Bash

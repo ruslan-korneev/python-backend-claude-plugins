@@ -1,5 +1,5 @@
 ---
-name: mock
+name: pytest:mock
 description: Create a mock for an external dependency
 allowed_tools:
   - Bash

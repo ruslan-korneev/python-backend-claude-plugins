@@ -1,5 +1,5 @@
 ---
-name: run
+name: docker:run
 description: Generate docker run command for a service
 allowed_tools:
   - Bash

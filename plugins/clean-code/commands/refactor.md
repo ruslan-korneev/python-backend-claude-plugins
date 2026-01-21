@@ -1,5 +1,5 @@
 ---
-name: refactor
+name: clean-code:refactor
 description: Suggest refactoring for a specific code smell
 allowed_tools:
   - Read

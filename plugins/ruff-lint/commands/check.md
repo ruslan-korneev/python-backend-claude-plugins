@@ -1,5 +1,5 @@
 ---
-name: check
+name: ruff:check
 description: Run ruff check to analyze code for linting errors
 allowed_tools:
   - Bash

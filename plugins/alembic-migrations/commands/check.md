@@ -1,5 +1,5 @@
 ---
-name: check
+name: alembic:check
 description: Check migration for common problems
 allowed_tools:
   - Bash

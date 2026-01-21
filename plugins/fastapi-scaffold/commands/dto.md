@@ -1,5 +1,5 @@
 ---
-name: dto
+name: fastapi:dto
 description: Create Create/Read/Update DTOs from model
 allowed_tools:
   - Bash

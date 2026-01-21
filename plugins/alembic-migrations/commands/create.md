@@ -1,5 +1,5 @@
 ---
-name: create
+name: alembic:create
 description: Create migration with auto-fix for Enum downgrade
 allowed_tools:
   - Bash

@@ -1,5 +1,5 @@
 ---
-name: check
+name: pytyping:check
 description: Run mypy/pyright for type checking
 allowed_tools:
   - Bash
