@@ -2,26 +2,11 @@
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": {
-          "tool_name": "Edit",
-          "file_paths": ["**/*.py"]
-        },
+        "matcher": "Edit|Write",
         "hooks": [
           {
             "type": "command",
-            "command": "ruff format \"$CLAUDE_FILE_PATH\" 2>/dev/null; ruff check --fix --unsafe-fixes \"$CLAUDE_FILE_PATH\" 2>/dev/null || true"
-          }
-        ]
-      },
-      {
-        "matcher": {
-          "tool_name": "Write",
-          "file_paths": ["**/*.py"]
-        },
-        "hooks": [
-          {
-            "type": "command",
-            "command": "ruff format \"$CLAUDE_FILE_PATH\" 2>/dev/null; ruff check --fix --unsafe-fixes \"$CLAUDE_FILE_PATH\" 2>/dev/null || true"
+            "command": "jq -r '.tool_input.file_path' | { read file_path; if echo \"$file_path\" | grep -q '\\.py$'; then ruff format \"$file_path\" 2>/dev/null; ruff check --fix --unsafe-fixes \"$file_path\" 2>/dev/null; fi; } || true"
           }
         ]
       }
