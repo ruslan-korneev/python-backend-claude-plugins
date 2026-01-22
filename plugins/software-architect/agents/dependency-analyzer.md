@@ -1,7 +1,7 @@
 ---
 name: dependency-analyzer
 description: Analyze dependencies at module, package, and layer levels
-model: sonnet
+model: opus
 allowed_tools:
   - Bash
   - Read

@@ -1,7 +1,7 @@
 ---
 name: architecture-reviewer
 description: Deep architecture analysis with comprehensive checklist
-model: sonnet
+model: opus
 allowed_tools:
   - Bash
   - Read
