@@ -83,6 +83,17 @@
       "source": "./plugins/clean-code",
       "category": "development",
       "tags": ["python", "clean-code", "solid", "refactoring"]
+    },
+    {
+      "name": "software-architect",
+      "description": "System-level architecture for Python backend: design, ADR, dependency analysis, modernization.",
+      "version": "1.0.0-rc.1",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/software-architect",
+      "category": "development",
+      "tags": ["python", "architecture", "design", "fastapi", "adr", "patterns"]
     }
   ]
 }

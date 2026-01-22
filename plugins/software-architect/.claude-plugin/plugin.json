@@ -1,0 +1,10 @@
+{
+  "name": "software-architect",
+  "version": "1.0.0-rc.1",
+  "description": "Architecture analysis and design for Python backend projects (FastAPI + SQLAlchemy 2.0). System-level patterns, ADR, dependency analysis.",
+  "author": {
+    "name": "Ruslan Korneev"
+  },
+  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "keywords": ["python", "architecture", "design", "fastapi", "adr", "patterns"]
+}
