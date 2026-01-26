@@ -1,0 +1,10 @@
+{
+  "name": "full-cycle-dev",
+  "version": "1.0.0-rc.1",
+  "description": "Full TDD development cycle orchestrator. From prompt to documented feature.",
+  "author": {
+    "name": "Ruslan Korneev"
+  },
+  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "keywords": ["python", "tdd", "workflow", "orchestration", "development"]
+}
