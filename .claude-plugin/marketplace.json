@@ -94,6 +94,28 @@
       "source": "./plugins/software-architect",
       "category": "development",
       "tags": ["python", "architecture", "design", "fastapi", "adr", "patterns"]
+    },
+    {
+      "name": "full-cycle-dev",
+      "description": "Full TDD development cycle orchestrator. From prompt to documented feature with explore → plan → execute workflow.",
+      "version": "1.0.0-rc.1",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/full-cycle-dev",
+      "category": "development",
+      "tags": ["python", "tdd", "workflow", "orchestration", "development"]
+    },
+    {
+      "name": "code-review",
+      "description": "Efficient code review following the Review Pyramid (Python/FastAPI). Two-phase strategy: quick automated checks + deep semantic analysis.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/code-review",
+      "category": "development",
+      "tags": ["python", "code-review", "fastapi", "quality", "review-pyramid"]
     }
   ]
 }

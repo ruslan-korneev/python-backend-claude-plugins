@@ -1,0 +1,9 @@
+{
+  "name": "code-review",
+  "version": "1.0.0",
+  "description": "Efficient code review following the Review Pyramid (Python/FastAPI)",
+  "author": {
+    "name": "Ruslan Korneev"
+  },
+  "keywords": ["python", "code-review", "fastapi", "quality", "review-pyramid"]
+}
