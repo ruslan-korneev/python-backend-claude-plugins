@@ -52,17 +52,6 @@
       "tags": ["python", "typing", "mypy", "type-checking"]
     },
     {
-      "name": "docker-backend",
-      "description": "Docker for backend development. docker run first, docker-compose only on request.",
-      "version": "1.0.0-rc.2",
-      "author": {
-        "name": "Ruslan Korneev"
-      },
-      "source": "./plugins/docker-backend",
-      "category": "deployment",
-      "tags": ["python", "docker", "containers", "devops"]
-    },
-    {
       "name": "alembic-migrations",
       "description": "Alembic migrations with automatic handling of Enum and other problematic types.",
       "version": "1.0.0-rc.2",

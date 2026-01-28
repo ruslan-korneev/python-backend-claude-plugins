@@ -45,7 +45,6 @@ python .github/scripts/validate_plugins.py
 | **pytest-assistant** | TDD testing | `/test:first`, `/test:fixture` |
 | **fastapi-scaffold** | Boilerplate generation | `/fastapi:module`, `/fastapi:dto` |
 | **python-typing** | Type annotations (ZERO type:ignore) | `/types:check`, `/types:explain` |
-| **docker-backend** | Docker (docker run first) | `/docker:run`, `/docker:file` |
 | **alembic-migrations** | Migrations (enum handling) | `/migrate:create`, `/migrate:check` |
 | **clean-code** | SOLID, code smells | `/clean:review`, `/clean:refactor` |
 
@@ -53,7 +52,6 @@ python .github/scripts/validate_plugins.py
 
 - **ZERO noqa / ZERO type:ignore** — always fix properly, never suppress
 - **TDD** — test first, then implementation
-- **docker run first** — docker-compose only on explicit request
 - **TypedDict > dict[str, Any]** — strict dictionary typing
 - **Real test database** — never mock the database
 - **Branch coverage** — more important than line coverage
