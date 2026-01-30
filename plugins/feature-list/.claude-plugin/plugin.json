@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "feature-list",
+  "version": "1.0.0-rc.1",
+  "description": "Generate structured feature specifications with BR, US, AC. Supports codebase analysis and interactive design.",
+  "author": {
+    "name": "Ruslan Korneev"
+  }
+}

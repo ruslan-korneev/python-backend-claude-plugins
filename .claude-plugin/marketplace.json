@@ -105,6 +105,17 @@
       "source": "./plugins/code-review",
       "category": "development",
       "tags": ["python", "code-review", "fastapi", "quality", "review-pyramid"]
+    },
+    {
+      "name": "feature-list",
+      "description": "Generate structured feature specifications with BR, US, AC. Supports codebase analysis and interactive design.",
+      "version": "1.0.0-rc.1",
+      "author": {
+        "name": "Ruslan Korneev"
+      },
+      "source": "./plugins/feature-list",
+      "category": "documentation",
+      "tags": ["features", "requirements", "user-stories", "planning", "documentation"]
     }
   ]
 }
