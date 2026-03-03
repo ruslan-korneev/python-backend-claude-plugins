@@ -3,6 +3,6 @@
   "version": "2.0.0",
   "description": "Python code quality: ruff linting (ZERO noqa), type checking (ZERO type:ignore), clean code (SOLID), TDD with pytest.",
   "author": { "name": "Ruslan Korneev" },
-  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "repository": "https://github.com/ruslan-korneev/claude-plugins",
   "keywords": ["python", "linting", "ruff", "typing", "clean-code", "pytest", "tdd"]
 }

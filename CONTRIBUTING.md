@@ -35,7 +35,7 @@ plugins/your-plugin/
   "author": "Your Name",
   "commands_path": "../commands",
   "skills_path": "../skills",
-  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "repository": "https://github.com/ruslan-korneev/claude-plugins",
   "keywords": ["python", "your-topic"]
 }
 ```
@@ -86,8 +86,8 @@ When reporting issues, please include:
 
 ```bash
 # Clone the repository
-git clone https://github.com/ruslan-korneev/python-backend-claude-plugins.git
-cd python-backend-claude-plugins
+git clone https://github.com/ruslan-korneev/claude-plugins.git
+cd claude-plugins
 ```
 
 Then inside Claude Code, run these slash commands:

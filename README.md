@@ -22,7 +22,7 @@ Inside Claude Code, run these slash commands:
 
 ```
 # Add this marketplace
-/plugin marketplace add ruslan-korneev/python-backend-claude-plugins
+/plugin marketplace add ruslan-korneev/claude-plugins
 
 # Install individual plugins
 /plugin install ruff-lint@python-backend-plugins
@@ -35,8 +35,8 @@ Inside Claude Code, run these slash commands:
 ### From local clone
 
 ```bash
-git clone https://github.com/ruslan-korneev/python-backend-claude-plugins.git
-cd python-backend-claude-plugins
+git clone https://github.com/ruslan-korneev/claude-plugins.git
+cd claude-plugins
 ```
 
 Then inside Claude Code:

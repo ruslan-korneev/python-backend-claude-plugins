@@ -3,6 +3,6 @@
   "version": "2.0.0",
   "description": "Architecture design, code review (Review Pyramid), full-cycle TDD development, and structured feature specifications.",
   "author": { "name": "Ruslan Korneev" },
-  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "repository": "https://github.com/ruslan-korneev/claude-plugins",
   "keywords": ["python", "architecture", "code-review", "tdd", "planning", "features", "adr"]
 }

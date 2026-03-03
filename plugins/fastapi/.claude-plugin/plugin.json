@@ -3,6 +3,6 @@
   "version": "2.0.0",
   "description": "FastAPI scaffolding (modules, DTOs, endpoints) + Alembic migrations with auto-fix for Enum downgrade.",
   "author": { "name": "Ruslan Korneev" },
-  "repository": "https://github.com/ruslan-korneev/python-backend-claude-plugins",
+  "repository": "https://github.com/ruslan-korneev/claude-plugins",
   "keywords": ["python", "fastapi", "alembic", "migrations", "sqlalchemy", "scaffolding"]
 }
