@@ -103,19 +103,37 @@ query Issue($teamKey: String!, $number: Float!) {
 }
 ```
 
-### issueSearch — Search by Text
+### searchIssues — Search by Text
 
 ```graphql
-query IssueSearch($query: String!, $first: Int) {
-  issueSearch(query: $query, first: $first) {
+query SearchIssues($term: String!, $first: Int) {
+  searchIssues(term: $term, first: $first) {
     nodes {
       id
       identifier
       title
-      state { name type }
+      description
+      url
       priority
       priorityLabel
+      estimate
+      dueDate
+      createdAt
+      updatedAt
+      state { name type }
       assignee { name }
+      project { name }
+      cycle { name number }
+      labels {
+        nodes { name }
+      }
+      comments {
+        nodes {
+          body
+          createdAt
+          user { name }
+        }
+      }
     }
   }
 }
@@ -124,8 +142,8 @@ query IssueSearch($query: String!, $first: Int) {
 ### issues — List with Filters
 
 ```graphql
-query Issues($filter: IssueFilter, $first: Int, $after: String, $orderBy: PaginationOrderBy) {
-  issues(filter: $filter, first: $first, after: $after, orderBy: $orderBy) {
+query Issues($filter: IssueFilter, $first: Int, $after: String) {
+  issues(filter: $filter, first: $first, after: $after) {
     nodes {
       id
       identifier

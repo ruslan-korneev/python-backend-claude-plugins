@@ -56,7 +56,7 @@ Add filters based on provided arguments. See [filtering.md](../skills/linear-api
 - `project`: `basename $(pwd)` — filter by current directory name
 - `sort`: priority
 - `limit`: 25
-- Exclude completed/canceled by default (show only active issues)
+- Exclude completed/canceled by default — filter on client side after fetching (do NOT use server-side `state.type.nin` filter, it causes 401 errors)
 
 If `assignee=me`, use `{ "assignee": { "isMe": { "eq": true } } }`.
 
@@ -66,7 +66,7 @@ If `cycle=current`, resolve current active cycle first.
 
 Use `issues` query from [graphql-queries.md](../skills/linear-api/references/graphql-queries.md) with constructed filter.
 
-Set `first` to `limit` value. Use `orderBy: updatedAt` (default sort is by priority within display).
+Set `first` to `limit` value. Do NOT pass `orderBy` — it causes 401 errors with complex filters. Sort results on the client side after fetching (by priority by default, or by `sort` argument).
 
 ### Step 3: Display Results
 

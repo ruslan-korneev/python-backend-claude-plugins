@@ -119,8 +119,13 @@ Priority values: 0=No priority, 1=Urgent, 2=High, 3=Medium, 4=Low.
 
 ### Active (not completed/canceled)
 
+> **Warning:** Using `nin` on `state.type` may cause a false 401 error from the Linear API. Use client-side filtering instead: fetch all issues, then exclude those with `state.type` equal to `"completed"` or `"canceled"` in the response.
+
 ```json
-{ "state": { "type": { "nin": ["completed", "canceled"] } } }
+// Do NOT use this server-side filter:
+// { "state": { "type": { "nin": ["completed", "canceled"] } } }
+
+// Instead, fetch without state filter and filter results on the client side.
 ```
 
 ### Due Soon

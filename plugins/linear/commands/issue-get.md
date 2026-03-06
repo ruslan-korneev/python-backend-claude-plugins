@@ -25,13 +25,13 @@ Check `LINEAR_API_KEY` is set. Show setup instructions if missing.
 
 Parse the `id` argument:
 - If it matches pattern `[A-Z]+-[0-9]+` (e.g., TEAM-123): extract team key and number, use `issues` query with filter `{ team: { key: { eq: "TEAM" } }, number: { eq: 123 } }`
-- Otherwise: treat as search text, use `issueSearch` query
+- Otherwise: treat as search text, use `searchIssues` query
 
 ### Step 2: Fetch Issue
 
 For identifier lookup, use the `issue` query from [graphql-queries.md](../skills/linear-api/references/graphql-queries.md) with team key + number filter. Request all fields including comments.
 
-For text search, use `issueSearch` query. If multiple results, show a selection list and ask the user to pick one.
+For text search, use `searchIssues` query (parameter `term`, not `query`). If multiple results, show a selection list and ask the user to pick one.
 
 ### Step 3: Display Result
 
